@@ -4,7 +4,7 @@ const File = std.os.File;
 const Alloc = std.debug.global_allocator;
 
 pub fn main() anyerror!void {
-    const inputF = try File.openRead("../day1input.txt");
+    const inputF = try File.openRead("day1input.txt");
     defer inputF.close();
 
     const size = try inputF.getEndPos();

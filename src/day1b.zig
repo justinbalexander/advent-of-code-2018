@@ -9,7 +9,7 @@ pub fn main() anyerror!void {
 
   const allocator = &direct_allocator.allocator;
 
-  const inputF = try File.openRead("../day1input.txt");
+  const inputF = try File.openRead("day1input.txt");
   defer inputF.close();
 
   const size = try inputF.getEndPos();
